@@ -72,6 +72,7 @@ video.close()
 images = images[:len(timepoints)]
 
 
+# Adapted from playbooks like https://stackoverflow.com/a/44989063
 class Player(FuncAnimation):
     def __init__(self, fig, func, frames=None, init_func=None, fargs=None,
                  save_count=None, mini=0, maxi=100, pos=(0.125, 0.92), **kwargs):
